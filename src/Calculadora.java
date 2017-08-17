@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 
-/**
+/**pedir dosnumeros por teclado
+ * 
  *
  * @author Español
  */
@@ -42,13 +43,28 @@ public class Calculadora {
         int a=40;
         int b=30;
                 
-        operacion.sumar(a,b);
+       operacion.sumar(a,b);
         operacion.multiplicar(a,b);
       
         operacion.restar(a,b);
         
         operacion.mostrar();
+        /**Metodo para ingresar datos por pantalla 
+         * Se llama al metodo Scanner afuera de la clase y luego se llama al 
+         * metodo,ingresando un objeto exclusivo del metodo Scanner en este caso 
+         * sc, para luego llamar al objeto operacion creado anteriomente , 
+         * convocando al objeto de la clase scanner (sc)
+         * 
+         * 
+         */
+       Scanner sc=new Scanner(System.in);
         
+        System.out.println("ingrese el primer numero");
+        operacion.numero1= sc.nextInt();
+        System.out.println("ingrese el segundo numero");
+        operacion.numero2= sc.nextInt();
+        System.out.println("El primer numero ingresado fue  "+operacion.numero1+"el segundo numero ingresado "+ operacion.numero2);
+
         
         
         
