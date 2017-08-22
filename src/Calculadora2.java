@@ -37,12 +37,12 @@ public class Calculadora2 {
     public static void main(String[] args) {
        Calculadora operacion=new Calculadora();
        
-      
-        System.out.println("ingrese el primer numero");
-       Scanner n1 = new Scanner (System.in);
-       operacion.numero1=n1.nextInt();
-          System.out.println("ingrese el segundo numero");
+        Scanner n1 = new Scanner (System.in);
         
+        
+        System.out.println("ingrese el primer numero");
+        operacion.numero1=n1.nextInt();
+       System.out.println("ingrese el segundo numero");
        operacion.numero2=n1.nextInt();
        
         operacion.sumar(operacion.numero1, operacion.numero2);
